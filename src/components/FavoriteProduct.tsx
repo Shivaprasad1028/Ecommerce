@@ -4,6 +4,7 @@ import FormattedPrice from "./ChangedPrice";
 import { useDispatch } from "react-redux";
 import { addToCart, deleteFavorite } from "@/store/nextSlice";
 import ChangedPrice from "./ChangedPrice";
+import { StoreProduct } from "../../type";
 interface Item {
   _id: number;
   brand: string;
@@ -17,7 +18,7 @@ interface Item {
   quantity: number;
 }
 interface cartProductProps {
-  item: Item;
+  item: StoreProduct;
 }
 
 const FavoriteProduct = ({ item }: cartProductProps) => {
