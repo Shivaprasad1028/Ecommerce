@@ -6,6 +6,7 @@ import Products from "@/components/Products";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { setAllProducts } from "@/store/nextSlice";
+import { ProductProps } from "../../type";
 
 interface Props{
   productData: ProductProps;
